@@ -1,0 +1,10 @@
+{
+  "name": "HadirKu",
+  "description": "Aplikasi absensi karyawan dengan fitur face recognition biometrik real-time, verifikasi kehadiran akurat, dan pengajuan cuti digital.",
+  "requestFramePermissions": [
+    "android.permission.CAMERA",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

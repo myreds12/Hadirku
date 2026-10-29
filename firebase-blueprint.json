@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "Employee": {
+      "collection": "employees",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "nik": { "type": "string" },
+        "position": { "type": "string" },
+        "department": { "type": "string" },
+        "email": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "annualLeaveQuota": { "type": "number" },
+        "usedLeaveQuota": { "type": "number" },
+        "role": { "type": "string" },
+        "faceEnrolled": { "type": "boolean" }
+      }
+    },
+    "Attendance": {
+      "collection": "attendance",
+      "fields": {
+        "employeeId": { "type": "string" },
+        "employeeName": { "type": "string" },
+        "date": { "type": "string" },
+        "type": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "status": { "type": "string" },
+        "photoUrl": { "type": "string", "optional": true },
+        "locationName": { "type": "string" },
+        "distanceMeters": { "type": "number", "optional": true },
+        "biometricConfidence": { "type": "number", "optional": true },
+        "notes": { "type": "string", "optional": true }
+      }
+    },
+    "LeaveRequest": {
+      "collection": "leave_requests",
+      "fields": {
+        "employeeId": { "type": "string" },
+        "employeeName": { "type": "string" },
+        "employeeDepartment": { "type": "string" },
+        "leaveType": { "type": "string" },
+        "startDate": { "type": "string" },
+        "endDate": { "type": "string" },
+        "durationDays": { "type": "number" },
+        "reason": { "type": "string" },
+        "emergencyContact": { "type": "string" },
+        "status": { "type": "string" },
+        "submissionTimestamp": { "type": "number" },
+        "reviewerNotes": { "type": "string", "optional": true },
+        "reviewedTimestamp": { "type": "number", "optional": true }
+      }
+    },
+    "CompanyConfig": {
+      "collection": "settings",
+      "fields": {
+        "officeName": { "type": "string" },
+        "officeLatitude": { "type": "number" },
+        "officeLongitude": { "type": "number" },
+        "geofenceRadiusMeters": { "type": "number" },
+        "workStartTime": { "type": "string" },
+        "workEndTime": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HadirKu</string>
+    <string name="attendance_title">Presensi Kehadiran</string>
+    <string name="leave_request_title">Pengajuan Cuti</string>
+    <string name="face_scan_title">Pindai Wajah</string>
+    <string name="history_title">Riwayat &amp; Laporan</string>
+    <string name="profile_title">Profil Karyawan</string>
+    <string name="camera_permission_required">Izin kamera diperlukan untuk absensi face recognition</string>
+    <string name="location_permission_required">Izin lokasi diperlukan untuk verifikasi radius kantor</string>
+</resources>
